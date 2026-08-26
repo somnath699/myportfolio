@@ -208,6 +208,11 @@ body {
     padding: 10px;
   }
 
+  .theme-toggle {
+    order: 3;
+    margin-left: 10px;
+  }
+
   .main-nav {
     display: none;
     position: absolute;
