@@ -1,0 +1,176 @@
+:root {
+  --bg: #fbfaf7;
+  --panel: #ffffff;
+  --ink: #20201e;
+  --muted: #686762;
+  --line: #d9d7d1;
+  --accent: #b83f3f;
+  --soft: #f0eee9;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.grain {
+  opacity: .025;
+}
+
+.site-header {
+  background: linear-gradient(#fbfaf7, transparent);
+}
+
+.site-header.scrolled {
+  background: rgba(251, 250, 247, .94);
+  border-color: var(--line);
+}
+
+.main-nav a,
+.footer-nav a {
+  color: var(--muted);
+}
+
+.main-nav a:hover,
+.footer-nav a:hover {
+  color: var(--ink);
+}
+
+.nav-resume,
+.button-ghost,
+.filter,
+.tag-row span,
+.education-card,
+.service-grid article,
+.project-card,
+.contact-form,
+.project-modal {
+  border-color: var(--line);
+}
+
+.button-fill {
+  background: var(--ink);
+  color: #ffffff;
+}
+
+.button-fill:hover {
+  background: var(--accent);
+}
+
+.button-ghost,
+.filter {
+  color: var(--ink);
+  background: transparent;
+}
+
+.filter.active,
+.filter:hover {
+  background: var(--ink);
+  color: #ffffff;
+}
+
+.tag-row span {
+  color: var(--muted);
+  background: #f3f1ec;
+}
+
+.project-card,
+.education-card,
+.service-grid article,
+.contact-form,
+.project-modal {
+  background: var(--panel);
+}
+
+.project-visual {
+  background: #e8e5de;
+}
+
+.hero-art:after {
+  background: linear-gradient(90deg, #fbfaf7cc 0%, transparent 48%, #b83f3f18 100%), linear-gradient(0deg, #fbfaf7 0%, transparent 42%);
+}
+
+.hero-profile-image {
+  mix-blend-mode: multiply;
+  opacity: .72;
+}
+
+.hero h1 span {
+  -webkit-text-stroke: 1.5px #77756f;
+}
+
+.profile-card {
+  background: #e8e5de;
+}
+
+.profile-card:after {
+  background: linear-gradient(0deg, #fbfaf7 0%, transparent 50%), linear-gradient(120deg, #b83f3f28, transparent 55%);
+}
+
+.profile-card-label,
+.education-image span {
+  color: var(--ink);
+}
+
+.education-image {
+  background: #e8e5de;
+}
+
+.contact-form input,
+.contact-form textarea {
+  color: var(--ink);
+  background: #ffffff;
+  border-color: var(--line);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #92908a;
+}
+
+.project-modal::backdrop {
+  background: rgba(32, 32, 30, .35);
+}
+
+.modal-close {
+  color: var(--ink);
+  background: var(--soft);
+}
+
+.availability i {
+  background: #3f8b58;
+  box-shadow: 0 0 0 4px #3f8b5822;
+}
+
+.marquee {
+  border-color: var(--line);
+  background: #f0eee9;
+}
+
+.marquee i {
+  color: var(--accent);
+}
+
+.button span,
+.nav-resume span,
+.project-meta span:last-child,
+.project-link,
+.footer-bottom a {
+  color: var(--accent);
+}
+
+.menu-toggle span {
+  background: var(--ink);
+}
+
+.cursor {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .main-nav {
+    background: var(--panel);
+    border-color: var(--line);
+  }
+}
