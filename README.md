@@ -24,7 +24,7 @@ Premium dark portfolio website for Somnath Mishra, a Biotechnology student explo
 - `certificate.css` - Certification card styling
 - `supplied-assets.css` - Styling for supplied certificate and university images
 - `script.js` - Skills, projects, filtering, modal, menu, form, and image behavior
-- `Somnath-Mishra-Resume.pdf` - Downloadable resume
+- Resume details are presented directly in the portfolio; no resume PDF is included.
 
 ## Assets
 
@@ -33,7 +33,7 @@ The `assets` folder contains:
 - `somnath-profile.jpg` - Profile portrait used in the hero and About section
 - `certificate.png` - Social internship certificate
 - `lovely-professional-university.jpeg` - University campus image
-- `medical-report.svg`, `smart-water-bottle.svg`, `sensor-monitor.svg`, `bioinformatics-data.svg`, `environmental-research.svg`, and `algae-biofuel.svg` - Original project visuals
+- `medical-report.svg`, `smart-water-bottle.svg`, and `bioinformatics-data.svg` - Project visuals used by the three resume projects
 - Certificate PDFs for additional credentials
 
 ## Run Locally
@@ -46,11 +46,11 @@ Update the profile image path, project data, skills, and interactive content in 
 
 Contact links configured in `index.html`:
 
-- Professional email: `isomnathmishra447@gmail.com`
-- LinkedIn: `https://linkedin.com/in/somnath-mishra`
+- Professional email: `somnathmishra2025@lpu.com`
+- LinkedIn: `https://linkedin.com/in/somnath-mishra-802184382`
 - GitHub: `https://github.com/somnath699`
 
-The resume download buttons use `Somnath-Mishra-Resume.pdf` at the project root.
+The portfolio does not include a resume download button because no PDF is present in the project root.
 
 ## Deploy with GitHub Pages
 
