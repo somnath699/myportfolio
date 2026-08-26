@@ -44,11 +44,11 @@ No build step is required. Open `index.html` directly in a browser, or serve the
 
 Update the profile image path, project data, skills, and interactive content in `script.js`. Update text, links, and section structure in `index.html`.
 
-Replace the placeholder contact and social links before publishing:
+Contact links configured in `index.html`:
 
-- Professional email: `ADD-PROFESSIONAL-EMAIL`
-- LinkedIn: add the real profile URL
-- GitHub: add the real profile URL
+- Professional email: `isomnathmishra447@gmail.com`
+- LinkedIn: `https://linkedin.com/in/somnath-mishra`
+- GitHub: `https://github.com/somnath699`
 
 The resume download buttons use `Somnath-Mishra-Resume.pdf` at the project root.
 

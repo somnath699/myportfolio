@@ -1,2 +1,10 @@
 .profile-image{display:block;object-fit:cover;filter:grayscale(1) contrast(1.08)}.hero-profile-image{position:absolute;inset:0;width:100%;height:100%;object-position:center top;opacity:.78;mix-blend-mode:screen}.hero-art:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#121212aa 0%,transparent 48%,#c84d4d18 100%),linear-gradient(0deg,#121212 0%,transparent 42%);pointer-events:none}.hero-art .art-label,.hero-art .art-index,.hero-art .art-caption{z-index:2}.profile-card{height:500px;position:relative;overflow:hidden;border:1px solid var(--line);background:#1b1a19}.about-profile-image{width:100%;height:100%;object-position:center 20%;opacity:.75}.profile-card:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#121212 0%,transparent 50%),linear-gradient(120deg,#c84d4d28,transparent 55%)}.profile-card-label{position:absolute;z-index:2;bottom:22px;left:23px;color:var(--ink);font:10px var(--mono);text-transform:uppercase;letter-spacing:1px}@media(max-width:650px){.profile-card{height:330px}}
 .hero-art .hero-profile-image{z-index:1}.hero-art .art-core{display:block;z-index:0;left:78%;top:72%;width:120px;height:120px;opacity:.6}.hero-art .art-ring{z-index:0}.hero-art .art-line,.hero-art .art-node{z-index:2}
+
+/* Keep the portrait readable while retaining the scientific overlay. */
+.hero-art .hero-profile-image{z-index:1;opacity:.94;mix-blend-mode:normal}
+.hero-art:after{z-index:2;background:linear-gradient(90deg,#12121238 0%,transparent 48%,#c84d4d12 100%),linear-gradient(0deg,#12121238 0%,transparent 42%)}
+.hero-art .art-core,.hero-art .art-ring{z-index:3}
+.hero-art .art-line,.hero-art .art-node,.hero-art .art-label,.hero-art .art-index,.hero-art .art-caption{z-index:4}
+.about-profile-image{opacity:.88}
+.profile-card:after{z-index:1;background:linear-gradient(0deg,#12121288 0%,transparent 50%),linear-gradient(120deg,#c84d4d18,transparent 55%)}
