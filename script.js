@@ -1,4 +1,10 @@
 const profileImage='assets/somnath-profile.jpg';
+const themeToggle=document.querySelector('.theme-toggle');
+const savedTheme=localStorage.getItem('portfolio-theme');
+if(savedTheme==='dark'){document.body.classList.add('dark-theme')}
+function updateThemeToggle(){const dark=document.body.classList.contains('dark-theme');themeToggle.setAttribute('aria-label',dark?'Switch to light theme':'Switch to dark theme');themeToggle.title=dark?'Switch to light theme':'Switch theme';themeToggle.querySelector('.theme-icon').textContent=dark?'☀':'☾'}
+updateThemeToggle();
+themeToggle.addEventListener('click',()=>{const dark=document.body.classList.toggle('dark-theme');localStorage.setItem('portfolio-theme',dark?'dark':'light');updateThemeToggle()});
 const profileFallback='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=85';
 const heroArt=document.querySelector('.hero-art');
 const heroImage=document.createElement('img'); heroImage.className='profile-image hero-profile-image'; heroImage.src=profileImage; heroImage.alt='Portrait of Somnath Mishra'; heroImage.onerror=()=>{heroImage.onerror=null;heroImage.src=profileFallback}; heroArt.prepend(heroImage);

@@ -163,6 +163,101 @@ body {
   background: var(--ink);
 }
 
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink);
+  background: var(--panel);
+  cursor: pointer;
+  transition: color .25s ease, background .25s ease, border-color .25s ease, transform .25s ease;
+}
+
+.theme-toggle:hover {
+  color: #ffffff;
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: rotate(12deg);
+}
+
+.theme-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+body.dark-theme {
+  --bg: #121212;
+  --panel: #191919;
+  --ink: #f1eee9;
+  --muted: #999793;
+  --line: #30302e;
+  --accent: #c84d4d;
+  --soft: #242321;
+}
+
+body.dark-theme .site-header {
+  background: linear-gradient(#121212, transparent);
+}
+
+body.dark-theme .site-header.scrolled {
+  background: rgba(18, 18, 18, .9);
+}
+
+body.dark-theme .button-fill {
+  background: var(--accent);
+}
+
+body.dark-theme .button-fill:hover,
+body.dark-theme .filter.active,
+body.dark-theme .filter:hover {
+  background: #f1eee9;
+  color: #20201e;
+}
+
+body.dark-theme .tag-row span {
+  background: #242321;
+}
+
+body.dark-theme .project-card,
+body.dark-theme .education-card,
+body.dark-theme .service-grid article,
+body.dark-theme .contact-form,
+body.dark-theme .project-modal {
+  background: var(--panel);
+}
+
+body.dark-theme .project-visual,
+body.dark-theme .profile-card,
+body.dark-theme .education-image {
+  background: #1b1a1a;
+}
+
+body.dark-theme .hero-art:after {
+  background: linear-gradient(90deg, #121212aa 0%, transparent 48%, #c84d4d18 100%), linear-gradient(0deg, #121212 0%, transparent 42%);
+}
+
+body.dark-theme .hero-profile-image {
+  mix-blend-mode: screen;
+}
+
+body.dark-theme .profile-card:after {
+  background: linear-gradient(0deg, #121212 0%, transparent 50%), linear-gradient(120deg, #c84d4d28, transparent 55%);
+}
+
+body.dark-theme .hero h1 span {
+  -webkit-text-stroke-color: #999793;
+}
+
+body.dark-theme .theme-toggle {
+  color: var(--ink);
+  background: var(--panel);
+}
+
 .cursor {
   border-color: var(--accent);
   color: var(--accent);
