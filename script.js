@@ -1,8 +1,10 @@
 const profileImage='assets/somnath-profile.jpg';
+const profileFallback='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=85';
 const heroArt=document.querySelector('.hero-art');
-const heroImage=document.createElement('img'); heroImage.className='profile-image hero-profile-image'; heroImage.src=profileImage; heroImage.alt='Portrait of Somnath Mishra'; heroArt.prepend(heroImage);
+const heroImage=document.createElement('img'); heroImage.className='profile-image hero-profile-image'; heroImage.src=profileImage; heroImage.alt='Portrait of Somnath Mishra'; heroImage.onerror=()=>{heroImage.onerror=null;heroImage.src=profileFallback}; heroArt.prepend(heroImage);
 const aboutVisual=document.querySelector('.dna-graphic');
 aboutVisual.className='profile-card reveal'; aboutVisual.setAttribute('aria-label','Somnath Mishra profile portrait'); aboutVisual.innerHTML=`<img class="profile-image about-profile-image" src="${profileImage}" alt="Portrait of Somnath Mishra"><span class="profile-card-label">Somnath Mishra / Profile</span>`;
+const aboutImage=aboutVisual.querySelector('.about-profile-image'); aboutImage.onerror=()=>{aboutImage.onerror=null;aboutImage.src=profileFallback};
 const skills=[{title:'Programming',items:['Python','C','Java','Web development']},{title:'Bioinformatics',items:['Computational biology','Sequence analysis','Biological data','Bioinformatics tools']},{title:'Biotechnology',items:['PCR','Gel electrophoresis','Spectrophotometry','Chromatography','Tissue culture','Fermentation']},{title:'Data & technology',items:['Data analysis','Visualization','Problem solving','Git / GitHub','HTML · CSS · JS']}];
 const projects=[
  {id:'01',title:'AI Medical Report Analyzer',category:'AI / Data / Healthcare',filters:['data','development'],desc:'An intelligent concept for analyzing medical reports and presenting complex information in a simpler, structured format.',tech:'Python · Data Analysis · AI Concepts',visual:'visual-1'},
