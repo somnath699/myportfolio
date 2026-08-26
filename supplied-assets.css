@@ -1,0 +1,1 @@
+.education-image img{object-fit:cover;object-position:center;height:100%;width:100%;display:block}.certificate-card img{object-fit:contain;object-position:center top;background:#e9e4dc;width:100%;height:190px;display:block}.certificate-card{overflow:hidden}@media(max-width:650px){.certificate-card img{height:230px}}
