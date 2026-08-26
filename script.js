@@ -1,4 +1,4 @@
-const profileImage='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=85';
+const profileImage='assets/somnath-profile.jpg';
 const heroArt=document.querySelector('.hero-art');
 const heroImage=document.createElement('img'); heroImage.className='profile-image hero-profile-image'; heroImage.src=profileImage; heroImage.alt='Portrait of Somnath Mishra'; heroArt.prepend(heroImage);
 const aboutVisual=document.querySelector('.dna-graphic');
