@@ -17,6 +17,10 @@ body {
   opacity: .025;
 }
 
+.reveal {
+  transform: translateX(-40px);
+}
+
 .site-header {
   background: linear-gradient(#fbfaf7, transparent);
 }
